@@ -1,0 +1,53 @@
+Table,Field,Description
+intlmatches,matchid,unique identifier (PK) for the match
+intlmatches,tournamentid,unique identifier (FK) for the tournament
+intlmatches,date,date of the match
+intlmatches,hteamid,unique identifier (FK) for first team of the match
+intlmatches,hgoals,goals scored by the first team
+intlmatches,agoals,goals scored by the second team
+intlmatches,ateamid,unique identifier (FK) for second team of the match
+intlmatches,hstadium,match in the host stadium or on a neutral venue
+intlteams,teamid,unique identifier (PK) for the team
+intlteams,tname,team name
+intlteams,tranking,team in the FIFA ranking system
+intlteams,tpoints,total team points
+intltournaments,tournamentid,unique identifier (PK) for the tournament
+intltournaments,tname,tournament name
+wcmatches,matchid,unique identifier (PK) of world cup matches
+wcmatches,date,date of the match
+wcmatches,stageid,unique identifier (FK) of world cup's stage
+wcmatches,hteamid,unique identifier (FK) of the first team
+wcmatches,hgoals,goals scored by the first team
+wcmatches,agoals,goals scord by the second team
+wcmatches,ateamid,unique identifier (FK) of the second team
+wcmatches,wconditionid,unique identifier (PK) of type of win
+wcmatches,wteamid,unique identifer (FK) of the winning team
+wcmatches,hteam,host venue / stadium or not
+wconditions,wconditionid,unique identifier (PK) of winning condition
+wconditions,wconditiontype,type of win of the match
+wcpositions,positionid,unique identifier (PK) of position of the player
+wcpositions,pname,position name of the player
+wcsquads,squadid,unique identifier (PK) of world cup squad
+wcsquads,teamid,unique identifier (FK) of world cup team
+wcsquads,positionid,unique identifer (FK) of the player's position
+wcsquads,pname,player name
+wcsquads,page,player's age
+wcsquads,pcaps,player's caps
+wcsquads,pgoals,player's goals
+wcsquads,pwcgoals,player's goals in the world cups
+wcsquads,leagueid,unique identifier (FK) of leagues the player are in
+wcstages,stageid,unique identifier (PK) of world cup stage
+wcstages,stype,stage name of the world cups
+wcwinners,wcid,unique identifier (PK) of world cup
+wcwinners,wcyear,world cup year
+wcwinners,hcountryid,unique identifier (FK) of host county
+wcwinners,winnerid,unique identifier (FK) of winning team
+wcwinners,runnersupid,unique identifier (FK) of runner's up team
+wcwinners,teamid,unique identifier (FK) of 3rd place team
+wcwinners,fteamid,unique identifier (FK) of 4th position team
+wcwinners,gscored,goals scored in the world cup
+wcwinners,qteams,qualified teams in the world cup
+wcwinners,mplayed,matches played in the world cup
+worldleagues,leagueid,unique identifier (PK) of the domestic league
+worldleagues,cname,country name
+worldleagues,lname,league name
